@@ -33,6 +33,21 @@ body{
     right: 45px;
 
 }
+.monster2{
+    
+
+    height: 144px;
+    width: 165px;
+    background-image: url('Green-Monster.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    visibility: hidden;
+
+
+}
 .game-over{
     position: absolute;
     top: 50%;
@@ -127,5 +142,28 @@ body{
     }
     100%{
         left: -10vw;
+    }
+}
+.stone{
+    height: 80px;
+    width: 59px;
+    position: absolute;
+    left: 50%;
+    background-image: url('rock.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: falling 2s linear infinite;
+}
+
+.stone2{
+
+}
+@keyframes falling{
+    0%{
+        bottom: 100vh;
+        
+    }
+    100%{
+        bottom: -10vh;
     }
 }
