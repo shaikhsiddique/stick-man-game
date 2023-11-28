@@ -95,7 +95,7 @@ setInterval(()=>{
 
 
 
-    if(offsetx<40 && offsety<30 || offsetstonex<30 && offsetstoney<20 || score>30 && offsetx2<40 &&offsety2<30){
+    if(offsetx<40 && offsety<30 || offsetstonex<30 && offsetstoney<20 || score>20 && offsetx2<40 &&offsety2<30){
        background_music.pause(); 
         play(gameoveraudio);
         console.log('game-over')
@@ -129,7 +129,7 @@ setInterval(()=>{
     
     
     }
-    if(score>30){
+    if(score>20){
         
         monster2.style.visibility='visible'
         monster2.classList.add('monster-move');
